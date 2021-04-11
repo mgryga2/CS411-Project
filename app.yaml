@@ -1,0 +1,19 @@
+runtime: python38
+
+instance_class: F1
+
+env_variables:
+  MYSQL_USER:
+  MYSQL_PASSWORD:
+  MYSQL_DB:
+  MYSQL_HOST:
+
+handlers:
+  - url: /img
+  static_dir: static/img
+
+  - url: /script
+  static_dir: static/script
+
+  - url: /styles
+  static_dir: static/styles
